@@ -1,0 +1,42 @@
+.content-input {
+  display: flex;
+  flex-flow: column;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.content-input input {
+  box-shadow: 0 0 0 1px #c9e0f7;
+  border: 0px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.detail-item-book {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.detail-item-book img {
+  width: 14em;
+  margin: 20px;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.save-button {
+  border: 0px;
+  color: #fff;
+  background: #3ecf8e;
+  text-shadow: 0 1px 3px rgba(36,180,126,.4);
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);  
+}
