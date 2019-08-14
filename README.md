@@ -1,5 +1,5 @@
 
-This project was made with `React.js` and `SASS`.
+This project was made with `React.js`
 
 ## Environment
 
