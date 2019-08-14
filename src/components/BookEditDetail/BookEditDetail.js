@@ -11,7 +11,9 @@ export default class BookEditDetail extends Component {
             title: '',
             autor: '',
             genre: '',
-            ReleaseYear: 0
+            ReleaseYear: 0,
+
+            savingBook: false
         }
 
         this.onChangeImgUrl = this.onChangeImgUrl.bind(this);
@@ -44,7 +46,9 @@ export default class BookEditDetail extends Component {
     }
 
     onChangeReleaseYear = (event) => {
-        this.setState({ releaseYear: event.target.value });
+        if(isNaN(event.currentTarget.value) === false ){
+            this.setState({ releaseYear: event.target.value });
+        }
     }
 
     onChangeGenre = (event) => {
@@ -60,7 +64,13 @@ export default class BookEditDetail extends Component {
         return (
             <div className="detail-item-book">
                 <div className="flex-center">
-                    <img src={this.state.imgUrl} />
+                    {this.state.imgUrl && (
+                        <img src={this.state.imgUrl} alt=""/>
+                    )}
+                    {!this.state.imgUrl && (
+                        <i className="material-icons book-m">book</i>
+                    )}
+                    
                     <div>
                         <div className="content-input">
                             <label>Title</label>
@@ -76,7 +86,7 @@ export default class BookEditDetail extends Component {
                         </div>
                         <div className="content-input">
                             <label>Release Year</label>
-                            <input type="text" id="releaseYear" value={this.state.releaseYear} onChange={this.onChangeReleaseYear} />
+                            <input type="tel" id="releaseYear" value={this.state.releaseYear} onChange={this.onChangeReleaseYear} />
                         </div>
                         <div className="content-input">
                             <label>Image Url</label>

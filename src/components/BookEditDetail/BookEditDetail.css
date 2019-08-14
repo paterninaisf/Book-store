@@ -32,11 +32,17 @@
   border: 0px;
   color: #fff;
   background: #3ecf8e;
-  text-shadow: 0 1px 3px rgba(36,180,126,.4);
+  text-shadow: 0 1px 3px rgba(36, 180, 126, 0.4);
   width: 100px;
   height: 30px;
   border-radius: 4px;
   font-size: 15px;
   font-weight: 600;
-  box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);  
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
+
+.book-m {
+  color: #afaeae;
+  font-size: 15em;
+}
+

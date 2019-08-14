@@ -46,7 +46,7 @@
   height: 60px;
   color: #fff;
   background: #3ecf8e;
-  text-shadow: 0 1px 3px rgba(36,180,126,.4);
+  text-shadow: 0 1px 3px rgba(36, 180, 126, 0.4);
   border: 0px;
   cursor: pointer;
   border-radius: 50%;
@@ -81,4 +81,3 @@
   position: relative;
   margin: 10px;
 }
-
