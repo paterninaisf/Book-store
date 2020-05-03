@@ -10,11 +10,11 @@ Please install the followings tools.
 
 
 ## Usage
-1. `npm install.`
-2. `npm start.`
+1. `npm install`
+2. `npm start`
 
 ## Note
-Verify your API url in `config`, it can be different your API.
+Verify your API url in `config`, it can be different to your API.
 
 
 Any doub? please do a pull request!
